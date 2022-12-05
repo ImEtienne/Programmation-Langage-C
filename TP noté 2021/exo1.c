@@ -5,14 +5,14 @@
 #define prl { printf("\n"); }
 typedef struct json_element_s json_element_t;
 
-typedef enum {
-JSON_NULL,
-JSON_BOOLEAN,
-JSON_NUMBER,
-JSON_STRING,
-JSON_ARRAY,
+typedef enum
+{
+    JSON_NULL,
+    JSON_BOOLEAN,
+    JSON_NUMBER,
+    JSON_STRING,
+    JSON_ARRAY,
 } json_type_t;
-
 
 struct json_element_s {
     json_element_t* parent;
